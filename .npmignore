@@ -1,0 +1,15 @@
+.git/
+.github/
+.vscode/
+
+# for npm
+node_modules/
+
+# codes
+test/
+
+# misc
+.editorconfig
+.gitignore
+
+npm-debug.log

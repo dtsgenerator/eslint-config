@@ -1,0 +1,34 @@
+{
+  "name": "@dtsgenerator/eslint-config",
+  "version": "0.1.0",
+  "description": "This repository is the create command for dtsgenerator plugin.",
+  "main": "./bin/create.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dtsgenerator/eslint-config.git"
+  },
+  "keywords": [
+    "dtsgenerator"
+  ],
+  "author": "horiuchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtsgenerator/eslint-config/issues"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0"
+  }
+}
