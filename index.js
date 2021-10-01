@@ -32,5 +32,6 @@ module.exports = {
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "off",
+    "import/order": ["error", { "alphabetize": { "order": "asc" } }],
   },
 };
