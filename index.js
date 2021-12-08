@@ -26,6 +26,8 @@ module.exports = {
     },
   },
   rules: {
+    "eqeqeq": ["error", "smart"],
+    "prefer-const": "error",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/prefer-optional-chain": "error",
