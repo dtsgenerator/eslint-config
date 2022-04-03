@@ -3,12 +3,9 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
     "prettier",
   ],
-  plugins: ["sort-imports-es6-autofix"],
+  plugins: ["@typescript-eslint", "import", "unused-imports"],
   env: {
     node: true,
     es2021: true,
@@ -18,22 +15,21 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.json",
   },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        alwaysTryTypes: true,
-      },
-    },
-  },
   rules: {
-    "eqeqeq": ["error", "smart"],
+    "no-var": "error",
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
     "prefer-const": "error",
-    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
-    "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/prefer-optional-chain": "error",
+    "sort-imports": "off",
+    "import/order": ["error", { "alphabetize": { "order": "asc", "caseInsensitive": true }}],
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "@typescript-eslint/no-unnecessary-condition": ["error", { "allowConstantLoopConditions": true }],
+    "@typescript-eslint/prefer-for-of": "error",
+    "@typescript-eslint/prefer-function-type": "error",
+    "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
-    "import/no-named-as-default": "off",
-    "import/no-named-as-default-member": "off",
-    "import/order": ["error", { "alphabetize": { "order": "asc" } }],
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/no-unused-vars": "off"
   },
 };
