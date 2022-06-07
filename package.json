@@ -22,14 +22,14 @@
     "url": "https://github.com/dtsgenerator/eslint-config/issues"
   },
   "peerDependencies": {
-    "eslint": "^8.12.0",
-    "typescript": "^4.6.3"
+    "eslint": "^8.17.0",
+    "typescript": "^4.7.3"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0"
   }
 }
