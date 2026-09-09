@@ -7,6 +7,9 @@ node_modules/
 
 # codes
 test/
+fixtures/
+eslint.config.cjs
+tsconfig.json
 
 # misc
 .editorconfig

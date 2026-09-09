@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "module": "commonjs",
+    "strict": true,
+    "target": "ES2022"
+  },
+  "include": ["fixtures/**/*.ts"]
+}

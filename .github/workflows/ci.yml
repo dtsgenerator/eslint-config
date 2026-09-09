@@ -1,22 +1,23 @@
-name: Release on npm
+name: CI
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22.22.2, 24.15.0]
 
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.0.0
         with:
-          node-version: "24.15.0"
+          node-version: ${{ matrix.node-version }}
           cache: npm
-          registry-url: "https://registry.npmjs.org"
       - run: npm ci
       - run: npm test
-      - run: npm publish --ignore-scripts
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
